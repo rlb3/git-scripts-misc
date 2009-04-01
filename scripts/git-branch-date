@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+
+use Git::Scripts::Misc::BranchDate;
+
+my $git = Git::Scripts::Misc::BranchDate->new;
+$git->run;

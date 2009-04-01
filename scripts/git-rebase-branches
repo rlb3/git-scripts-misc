@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use Git::Scripts::Misc::RebaseBranches;
+
+my $git = Git::Scripts::Misc::RebaseBranches->new_with_options;
+$git->run;
