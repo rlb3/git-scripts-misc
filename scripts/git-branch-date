@@ -6,3 +6,11 @@ use Git::Scripts::Misc::BranchDate;
 
 my $git = Git::Scripts::Misc::BranchDate->new;
 $git->run;
+
+=pod
+
+=head1 USAGE
+
+git branch-date
+
+=cut

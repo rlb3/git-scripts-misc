@@ -7,3 +7,11 @@ use Git::Scripts::Misc::RebaseBranches;
 
 my $git = Git::Scripts::Misc::RebaseBranches->new_with_options;
 $git->run;
+
+=pod
+
+=head1 USAGE
+
+git rebase-branches --branch topic-branch1 topic-branch2
+
+=cut
