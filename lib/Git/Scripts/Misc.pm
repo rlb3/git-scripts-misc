@@ -10,7 +10,10 @@ has git_bin => (
     is      => 'ro',
     isa     => 'Str',
     default => sub {
-        return ( -e '/usr/bin/git' ) ? '/usr/bin/git' : '/usr/local/bin/git';
+        foreach my $git ( '/usr/bin/git', '/usr/local/bin/git', '/usr/local/git/bin/git' ) {
+            return $git if -e $git;
+        }
+        return 'git';
     }
 );
 
